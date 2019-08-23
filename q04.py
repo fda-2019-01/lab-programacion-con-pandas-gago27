@@ -12,4 +12,6 @@ tbl_1 = pd.read_csv('tbl1.tsv',
 tbl_1 = tbl_1.sort_values(by=['_c4'])
 tbl_1['_c4'] = tbl_1['_c4'].map(lambda x: x.upper())
 
-tbl_1._c4.unique()
+c = tbl_1._c4.unique()
+ans = list(c)
+ans
